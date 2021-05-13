@@ -1,0 +1,17 @@
+.userlist {
+  height: fit-content;
+  padding: 10px;
+  background: rgb(56, 53, 53);
+  border-radius: 10px;
+}
+.userlist__title {
+  text-align: center;
+  padding: 10px;
+  color: rgb(126, 65, 65);
+}
+
+.userlist__item {
+  text-align: center;
+  color: white;
+  padding: 5px;
+}

@@ -1,0 +1,48 @@
+.albums {
+  padding: 10px;
+  margin: 10px;
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.albums__cardwrapper {
+  width: 80%;
+  background-color: rgb(27, 28, 29);
+  border-radius: 10px;
+  border: 1px solid darkred;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+.albums__cardwrapper:hover {
+  transform: scale(1.05);
+  border: 1px solid grey;
+  box-shadow: 0px 0px 5px grey;
+}
+.albums__image {
+  border-radius: 20px;
+  padding: 10px;
+  align-self: center;
+}
+.albums__image > img {
+  border: 1px solid red;
+  border-radius: 20px;
+  height: 9.3rem;
+  object-fit: contain;
+}
+.albums__credentials {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
+  color: rgb(126, 65, 65);
+}
+.albums__credentials__userid > span {
+  color: white;
+}
+.albums__credentials__title {
+  padding: 10px 0 5px 0;
+  color: rgb(126, 65, 65);
+  font-size: 1.1rem;
+}

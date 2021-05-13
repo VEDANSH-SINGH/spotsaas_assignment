@@ -1,0 +1,135 @@
+.albumlistwrapper {
+  height: 100%;
+  background: rgb(56, 53, 53);
+  display: flex;
+  flex-direction: column;
+}
+.albumlist__buttons {
+  padding: 0 20px 0px 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.albumlist__button {
+  margin: 10px 20px 10px 20px;
+
+  height: 50px;
+  background-color: grey;
+  border-radius: 5px;
+  border: none;
+  flex: 0.2;
+  transition: all 0.1s ease-in;
+}
+.albumlist__button:hover {
+  background-color: rgb(63, 60, 60);
+}
+.dropdown {
+  flex: 0.4;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: grey;
+  z-index: 2;
+}
+
+.dropdown-header {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-body {
+  padding: 5px;
+  border-top: 1px solid #e5e8ec;
+  display: none;
+}
+
+.dropdown-body.open {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.dropdown-item-dot {
+  opacity: 0;
+  color: #91a5be;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 13px;
+  color: #740202;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.icon.open {
+  transform: rotate(90deg);
+}
+.albumlist {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+}
+.link {
+  text-decoration: none;
+}
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  outline: none;
+  justify-content: center;
+}
+.pagination > .active > a {
+  background-color: #5f0801;
+  border-color: #5f0801;
+  color: #fff;
+}
+.pagination > li > a {
+  border: 1px solid #5f0801;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #5f0801;
+  border-color: #5f0801;
+  outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #5f0801;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+}
+@media only screen and (max-width: 600px) {
+  .albumlist {
+    grid-template-columns: 1fr;
+  }
+}

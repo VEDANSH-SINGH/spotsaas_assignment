@@ -1,0 +1,35 @@
+.header {
+  height: 50px;
+  flex: 0.1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(19, 18, 18);
+  color: aliceblue;
+  font-family: sans-serif;
+}
+.header__logo {
+  flex: 0.2;
+  padding-left: 20px;
+}
+.header__logo > img {
+  width: 50px;
+
+  height: auto;
+}
+.header__items {
+  padding: 5px;
+  flex: 0.4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(136, 9, 9);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+@media only screen and (max-width: 600px) {
+  .header__items {
+    display: none;
+  }
+}
